@@ -13,9 +13,19 @@
     "moment": "~2.0.0",
     "debowerify": "~0.1.8",
     "handlebars": "~1.0.12",
-    "grunt-browserify": "~1.2.4"
+    "grunt-browserify": "~1.2.4",
+    "jade": "~0.35.0",
+    "disc": "~0.3.2",
+    "browserify-shim": "~2.0.8"
   },
   "engines": {
     "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "jadeify2": "0.0.3",
+    "coffeeify": "~0.5.1",
+    "deamdify": "~0.1.1",
+    "brfs": "0.0.8",
+    "grunt-contrib-uglify": "~0.2.4"
   }
 }

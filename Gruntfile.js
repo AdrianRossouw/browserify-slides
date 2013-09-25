@@ -16,8 +16,24 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     'dist/js/main.js': ['js/main.js', 'js/init.js']
+                },
+                options: {
+                    shim: {
+                        'impress': { path: 'bower_components/impress.js/js/impress.js', exports: 'impress'}
+                    },
+                    transform: ['brfs', 'debowerify', 'jadeify2', 'coffeeify']
+                }
+
+            },
+            templates: {
+                files: {
+                    'dist/js/templates.js': ['templates/*.js']
+                },
+                options: {
+                    transform: ['jadeify2']
                 }
             }
+
         },
         watch: {
             options: {
@@ -30,7 +46,8 @@ module.exports = function (grunt) {
                     'js/*',
                     'steps/*',
                     'examples/*',
-                    'css/*.css'
+                    'css/*.css',
+                    'templates/*.jade'
                 ]
             }
         },

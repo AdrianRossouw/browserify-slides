@@ -15,6 +15,6 @@ steps.push(require('./step1.json'));
 
 // This is javascript again.
 // It can (and will) contain require() calls too.
-//steps.push(require('./step2.js'));
+steps.push(require('./step2.js'));
 
 // <--- snip --->

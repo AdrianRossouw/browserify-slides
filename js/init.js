@@ -1,2 +1,3 @@
-/* globals impress */
+var impress = require('impress');
+
 impress().init();
