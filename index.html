@@ -23,26 +23,19 @@
 <div id="impress" class="steps">
 </div>
 
-
   <script src="bower_components/jquery/jquery.js"></script>
-  <script src="bower_components/handlebars/handlebars.js"></script>
   <script src="bower_components/impress.js/js/impress.js"></script>
-  <script src="js/main.js"></script>
 
   <script id="step-template" type="x-handlebars-template">
-    <div id="{{id}}" class="{{class}}"{{#step data}}{{uri}}{{/step}}>{{{file}}}</div>
+      <div id="{{id}}" class="{{class}}"{{#step data}}{{uri}}{{/step}}>
+          {{#if html}}{{{html}}}{{else}}{{{title}}}{{{content}}}{{/if}}
+      </div>
   </script> 
 
   <script>
   // First, get sorted slide list
-
-  $.getJSON('steps/list.json', function(data) {
-    // Append ordered slides
-    appendSlides(data);
-    impress().init();
-  });
   </script>
 
-
+  <script src="/dist/js/main.js"></script>
 </body>
 </html>

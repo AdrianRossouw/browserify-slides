@@ -10,7 +10,10 @@
     "grunt-open": "~0.2.0",
     "matchdep": "~0.1.2",
     "connect-livereload": "~0.2.0",
-    "moment": "~2.0.0"
+    "moment": "~2.0.0",
+    "debowerify": "~0.1.8",
+    "handlebars": "~1.0.12",
+    "grunt-browserify": "~1.2.4"
   },
   "engines": {
     "node": ">=0.8.0"

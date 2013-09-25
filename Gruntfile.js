@@ -12,18 +12,25 @@ module.exports = function (grunt) {
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
     grunt.initConfig({
+        browserify: {
+            dist: {
+                files: {
+                    'dist/js/main.js': ['js/main.js', 'js/init.js']
+                }
+            }
+        },
         watch: {
             options: {
-                nospawn: true,
                 livereload: LIVERELOAD_PORT
             },
             livereload: {
+                tasks: ['default'],
                 files: [
                     'index.html',
-                    'js/*.js',
-                    'css/*.css',
-                    'steps/*.html',
-                    'steps/list.json'
+                    'js/*',
+                    'steps/*',
+                    'examples/*',
+                    'css/*.css'
                 ]
             }
         },
@@ -51,5 +58,10 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('server', ['connect:livereload', 'open', 'watch']);
+    // Default task(s).
+    grunt.registerTask('default', [
+        'browserify'
+    ]);
+
+    grunt.registerTask('server', ['default', 'connect:livereload', 'open', 'watch']);
 };
