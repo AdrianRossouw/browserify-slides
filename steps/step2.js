@@ -1,15 +1,15 @@
 var fs = require('fs');
-var tmpl = require('../templates/example.jade');
 
-var step = {
+module.exports = {
     "id": "zardos",
     "class": "step",
+    "template": require('../templates/example.jade'),
     "title": "Quick Peek Behind the Curtain",
     "example": {
         "description" : "This is called an 'entry point'",
         "filename"    : "./js/main.js",
         "command"     : "browserify js/main.js -o dist/js/main.js",
-        "file"        : fs.readFileSync(__dirname + '/main.js')
+        "file"        : fs.readFileSync(__dirname + '/../js/main.js')
     },
     "data": {
         "x": 6000,
@@ -18,5 +18,3 @@ var step = {
         "rotate": 90
     }
 };
-step.html = tmpl(step);
-module.exports = step;

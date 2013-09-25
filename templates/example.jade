@@ -1,5 +1,6 @@
-h2= title
+extends slide
 
-h3= example.filename
-
-pre.lang-js!= example.file
+block content
+  h3= example.filename
+  block code
+    pre.lang-js!= example.file

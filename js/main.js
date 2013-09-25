@@ -1,28 +1,18 @@
-// require the handlebars module install by npm
-var Handlebars = require('handlebars');
+var slides = require('./steps.js'); // local file
+var _      = require('underscore'); // module installed by npm
 
-// require a local module relative to this file
-var slides = require('./steps.js');
+// application code
 
-// application code.
-Handlebars.registerHelper('step', dataHelper);
-var htmltemplate = $('#step-template').html();
-var htmltempl = Handlebars.compile(htmltemplate);
+_.templateSettings.interpolate = /\{\{(.+?)\}\}/g;
 
-appendSlides(slides);
+var template = _.template($('#step-template').html());
 
-// <--- snip --->
-
-function appendSlides(steps) {
-    steps.forEach(function(step) {
-        $('.steps').append(htmltempl(step));
+_(slides).each(function(step) {
+    _.defaults(step, {
+        template: template,
+        html: false,
+        klass: step.class
     });
-}
 
-function dataHelper(data) {
-    var ret = '';
-    for (var key in data) {
-        ret = ret + ' data-' + key + '="' + data[key] + '"';
-    }
-    return ret;
-}
+    $('.steps').append(step.template(step));
+});

@@ -11,10 +11,13 @@ steps.push({
 });
 
 // Importing pure JSON.
-steps.push(require('./step1.json'));
+steps.push(require('../steps/step1.json'));
+
+// <-- snip -->
 
 // This is javascript again.
 // It can (and will) contain require() calls too.
-steps.push(require('./step2.js'));
+steps.push(require('../steps/step2'));
 
-// <--- snip --->
+// Supports coffee script via coffeeify.
+steps.push(require('../steps/step3.coffee'));

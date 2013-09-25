@@ -13,27 +13,38 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         browserify: {
-            dist: {
+            vendor: {
                 files: {
-                    'dist/js/main.js': ['js/main.js', 'js/init.js']
+                    'dist/js/vendor.js': ['highlight.js', 'impress', 'underscore']
                 },
                 options: {
                     shim: {
                         'impress': { path: 'bower_components/impress.js/js/impress.js', exports: 'impress'}
                     },
-                    transform: ['brfs', 'debowerify', 'jadeify2', 'coffeeify']
+                    alias: ['underscore:'],
+                    transform: ['debowerify']
                 }
-
             },
             templates: {
                 files: {
-                    'dist/js/templates.js': ['templates/*.js']
+                    'dist/js/templates.js': ['templates/*.jade']
                 },
                 options: {
-                    transform: ['jadeify2']
+                    transform: ['jadeify2'],
+                    aliasMappings: {
+                        src: ['templates/*.jade']
+                    }
+                }
+            },
+            dist: {
+                files: {
+                    'dist/js/main.js': ['js/main.js', 'js/init.js']
+                },
+                options: {
+                    external: ['impress', 'highlight.js', 'underscore', 'templates/*.jade'],
+                    transform: ['coffeeify', 'jadeify2', 'brfs']
                 }
             }
-
         },
         watch: {
             options: {
@@ -41,14 +52,7 @@ module.exports = function (grunt) {
             },
             livereload: {
                 tasks: ['default'],
-                files: [
-                    'index.html',
-                    'js/*',
-                    'steps/*',
-                    'examples/*',
-                    'css/*.css',
-                    'templates/*.jade'
-                ]
+                files: ['index.html', 'js/*','steps/*', 'examples/*', 'css/*.css','templates/*.jade' ]
             }
         },
         connect: {
