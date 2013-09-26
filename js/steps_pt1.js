@@ -7,7 +7,7 @@ steps.push({
     "class": "step title",
     "title": "<h1>Browserify</h1>",
     "content": "<p class='text-center text-primary'>client-side require('module')</p>",
-    "data": { "x": 0, "y": 0, "z": 0, "scale": 4, "rotate": 0, 'rotate-x': 0, 'rotate-y': 0 }
+    "data": { "x": 3000, "y": 0, "z": 0, "scale": 4, "rotate": 0, 'rotate-x': 0, 'rotate-y': 0 }
 });
 
 // Importing pure JSON.

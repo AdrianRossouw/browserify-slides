@@ -8,7 +8,7 @@ var transition = require('./transition.coffee');
 steps.push(require('../steps/rest.coffee'));
 
 var runner = transition.run('transition', 'data', steps[0].data);
-var defaultTrans = { transition: [ ['moveRight', 6000] ] };
+var defaultTrans = { transition: [ ['moveRight', 4000] ] };
 
 module.exports = _([steps]).chain()
     .flatten()

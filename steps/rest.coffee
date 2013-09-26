@@ -7,9 +7,10 @@ steps.push
   class: "step"
   template: require('../templates/grunt.jade')
   transition: [
-    ['moveLeft', 12000],
-    ['rotateCW', 180],
-    ['moveDown', 3000]
+    ['moveLeft', 18000],
+    ['flipRight'],
+    ['rotateCW', 90],
+    ['moveDown', 6000]
   ]
   title: "Using Grunt"
 
@@ -52,6 +53,11 @@ steps.push
   class: "step"
   template: require('../templates/transforms.jade')
   title: "Transforms"
+  transition: [
+      ['rotateCW', 270],
+      ['moveRight', 12000]
+  ]
+
 
 steps.push
   id: "transforms-example"
@@ -70,7 +76,7 @@ steps.push
   title: "Compiled using"
   command: "browserify -t coffeeify -t jadeify2 -t brfs main.js"
   transition: [
-    ["moveDown", 3000],
+    ["moveRight", 2000],
     ["flipRight"],
     ["zoomIn", 4]
   ]
@@ -81,8 +87,9 @@ steps.push
   template: require('../templates/vendor-externals.jade')
   title: "external bundles"
   transition: [
-    ["moveDown", 3000],
-    ["flipLeft"],
+    ["moveLeft", 4000],
+    ["moveDown", 8000],
+    ["RotateCW", 180],
     ["zoomOut", 4]
   ]
 
@@ -102,12 +109,21 @@ steps.push
   class: "step"
   template: require('../templates/about-amd.jade')
   title: "Why not AMD?"
+  transition: [
+    ["moveLeft", 6000],
+    ["moveUp", 12000]
+  ]
 
-###
-  steps.push
-    id: "links"
-    class: "step"
-    template: require('../templates/links.jade')
-    title: "More information"
-###
+
+steps.push
+  id: "links"
+  class: "step"
+  template: require('../templates/links.jade')
+  title: "More information"
+  transition: [
+    ['rotate', 0]
+    ['scale', 8]
+    ['adjustX', 12000]
+    ['adjustY', 0]
+  ]
 module.exports = steps
