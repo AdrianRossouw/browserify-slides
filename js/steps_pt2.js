@@ -1,7 +1,6 @@
 // moved to a separate file so the examples can be built using it 
 var _ = require('underscore');
 
-
 /* globals steps */
 // Supports coffee script via coffeeify.
 steps.push(require('../steps/grunt.coffee'));

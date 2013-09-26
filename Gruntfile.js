@@ -14,6 +14,12 @@ module.exports = function (grunt) {
     grunt.initConfig({
         //broken out to work better as an example
         browserify: require('./grunt.browserify'),
+        uglify: {
+            app: {
+                src: ['dist/js/vendor.js', 'dist/js/templates.js', 'dist/js/main.js'],
+                dest: 'dist/js/app.js'
+            }
+        },
         concat: {
             steps: {
                 files: { 'js/steps.js': ['js/steps_pt1.js', 'js/steps_pt2.js'] }
@@ -65,7 +71,8 @@ module.exports = function (grunt) {
     grunt.registerTask('default', [
         'less',
         'concat',
-        'browserify'
+        'browserify',
+        'uglify'
     ]);
 
     grunt.registerTask('server', ['default', 'connect:livereload', 'open', 'watch']);

@@ -1,4 +1,4 @@
-// This is a standard commonjs module.
+// First half of the js/steps.js file.
 var steps =  [];
 
 // Keeping it simple ..
@@ -17,11 +17,10 @@ steps.push(require('../steps/so-very-meta.json'));
 // It can (and will) contain require() calls too.
 steps.push(require('../steps/zardoz'));
 
-
+// <-- Rest of the file is concatenated on here -->
 
 // moved to a separate file so the examples can be built using it 
 var _ = require('underscore');
-
 
 /* globals steps */
 // Supports coffee script via coffeeify.
