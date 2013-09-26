@@ -1,12 +1,11 @@
 {
     "id"         : "built-with-browserify",
-    "class"      : "step",
-    "title"      : "<h2>Built With Browserify</h2>",
-    "content"    : "<p>Examples seen here are running 'live'</p>",
-    "data"       : {
-        "x"      : 3000,
-        "y"      : 0,
-        "scale"  : 1,
-        "rotate" : 90
-    }
+    "class"      : "step text-center",
+    "title"      : "<h2>Built by Browserify&#8482;</h2>",
+    "content"    : "<p class='text-center'>This presentation was built with browserify itself.</p><p class='text-success'>All code examples are included directly from it's own codebase.</p>",
+    "transition": [
+        ["moveRight", 3000],
+        ["zoomOut", 4],
+        ["flipRight"]
+    ]
 }

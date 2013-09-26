@@ -1,8 +1,8 @@
 module.exports =
-  id: "grunt"
+  id: "node-builtins"
   class: "step"
-  template: require('../templates/grunt.jade')
-  title: "Using Grunt"
+  template: require('../templates/node-builtins.jade')
+  title: "Using Builtins"
   data:
     x: 18000
     y: 0

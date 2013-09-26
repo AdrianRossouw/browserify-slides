@@ -6,7 +6,7 @@ steps.push({
     "id": "title",
     "class": "step title",
     "title": "<h1>Browserify</h1>",
-    "content": "<q>client-side require('module')</q>",
+    "content": "<p class='text-center text-primary'>client-side require('module')</p>",
     "data": { "x": 0, "y": 0, "scale": 4, "rotate": 0 }
 });
 
