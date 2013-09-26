@@ -25,6 +25,15 @@ module.exports = function (grunt) {
                 files: { 'js/steps.js': ['js/steps_pt1.js', 'js/steps_pt2.js'] }
             }
         },
+        copy: {
+            dist: {
+                expand: true,
+                flatten: true,
+                filter: 'isFile',
+                src: ['css/*.css'],
+                dest: 'dist/css/'
+            }
+        },
         less: {
             dist: {
                 files: { 'dist/css/style.css' : 'css/style.less' },
@@ -69,6 +78,7 @@ module.exports = function (grunt) {
 
     // Default task(s).
     grunt.registerTask('default', [
+        'copy',
         'less',
         'concat',
         'browserify',
