@@ -7,23 +7,29 @@ changeField = (field, fn) ->
     input[field] = fn(input[field], arg1, arg2, arg3)
     input
 
-adjustX   = changeField 'x',      (input, diff) -> input + diff
-adjustY   = changeField 'y',      (input, diff) -> input + diff
-rotate    = changeField 'rotate', (input, diff) -> input + diff
-scale     = changeField 'scale',  (input, diff) -> input * diff
+adjustX = changeField 'x',      (input, diff) -> input + diff
+adjustY = changeField 'y',      (input, diff) -> input + diff
+adjustZ = changeField 'z',      (input, diff) -> input + diff
+rotate  = changeField 'rotate', (input, diff) -> input + diff
+scale   = changeField 'scale',  (input, diff) -> input * diff
+roll    = changeField 'rotate-x',  (input, diff) -> input * diff
+pitch   = changeField 'rotate-y',  (input, diff) -> input * diff
+yaw     = changeField 'rotate-z',  (input, diff) -> input * diff
 
-moveLeft  = (input, diff) -> adjustX input, -diff
-moveUp    = (input, diff) -> adjustY input, -diff
-moveRight = adjustX
-moveDown  = adjustY
+moveLeft    = (input, diff) -> adjustX input, -diff
+moveUp      = (input, diff) -> adjustY input, -diff
+moveTowards = (input, diff) -> adjustZ input, -diff
+moveRight   = adjustX
+moveDown    = adjustY
+moveAway    = adjustZ
 
-rotateCW  = rotate
-rotateCCW = (input, diff) -> rotate input, -diff
-flipRight = (input) -> rotate input, 90
-flipLeft  = (input) -> rotate input, -90
+rotateCW    = rotate
+rotateCCW   = (input, diff) -> rotate input, -diff
+flipRight   = (input) -> rotate input, 90
+flipLeft    = (input) -> rotate input, -90
 
-zoomIn    = scale
-zoomOut   = (input, diff) -> scale input, (1 / diff)
+zoomOut     = scale
+zoomIn      = (input, diff) -> scale input, (1 / diff)
 
 
 module.exports = transform =

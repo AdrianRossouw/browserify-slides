@@ -5,7 +5,7 @@
     "content"    : "<p class='text-center'>This presentation was built with browserify itself.</p><p class='text-success'>All code examples are included directly from it's own codebase.</p>",
     "transition": [
         ["moveRight", 3000],
-        ["zoomOut", 4],
+        ["zoomIn", 4],
         ["flipRight"]
     ]
 }

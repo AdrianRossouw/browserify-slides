@@ -8,7 +8,7 @@ block prose
     * understands how node_modules can be found.
     * can tell when code is reachable.
     * can __not__ tell when you are using dynamic require.
-  pre
-    code.language-js
+  pre.inline-example
+    code.javascript
       | var name = 'mytemplate';
       | require(__dirname + '/' + name); // do not do this

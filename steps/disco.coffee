@@ -2,12 +2,12 @@ module.exports =
   id: "disco"
   class: "step"
   template: require('../templates/disc.jade')
-  title: "Resulting Bundle"
-  disc:
+  title: "resulting bundle"
+  transition: [
+      ['rotateCCW', -270],
+      ['moveRight', 3000],
+      ['zoomOut', 4]
+  ],
+  example:
     src: "/discs/step2.html"
-    command: "discify js/main.js -o dist/js/main.js -O"
-  data:
-    x: 12000
-    y: 0
-    scale: 4
-    rotate: 0
+  command: "discify js/main.js -o dist/js/main.js -O"

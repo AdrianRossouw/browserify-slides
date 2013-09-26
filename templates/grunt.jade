@@ -2,13 +2,16 @@ extends slide
 
 block title
 prepend content
-  img.pull-left(src='/img/grunt-logo.png')
+  img(src='/img/grunt-logo.png')
 
 block prose
-  :markdown
-    While we will be providing the commands used to
-    compile these files, this presentation actually
-    uses [Grunt](http://gruntjs.com) to build the various
-    components.
+  .clearfix
+  .text-center
 
-    It is more suited to complex build setups.
+    :markdown
+      While we will be providing the commands used to
+      compile these files, this presentation actually
+      uses [Grunt](http://gruntjs.com) to build the various
+      components.
+
+      It is more suited to complex build setups.

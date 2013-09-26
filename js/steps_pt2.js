@@ -18,7 +18,6 @@ module.exports = _([steps]).chain()
 function transMapFn(obj, ind, coll) {
     if (ind === 0) { return obj; } // first slide has no transitions
     _.defaults(obj, _.clone(defaultTrans));
-
     var res = runner(obj, coll[ind - 1]);
     return res;
 }

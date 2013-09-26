@@ -1,7 +1,7 @@
 extends slide
 
 block content
-  h3= example.filename
+  h3.filename= example.filename
   block code
     pre
-      code.language-js= example.file
+      code(class=example.lang)= example.file

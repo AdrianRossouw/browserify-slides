@@ -1,12 +1,9 @@
-div.container.slide(id=id, class=klass,
+div.container(id=id, class=klass,
   data-x=data.x, data-y=data.y,
   data-scale=data.scale, data-rotate=data.rotate,
   data-rotate-x=data.roll, data-rotate-y=data.pitch)
+  block step
+    block title
+      h2= title
+    block content
 
-  block title
-    h2= title
-
-  block content
-    .prose
-      block prose
-        p=content
