@@ -17,4 +17,6 @@ steps.push(require('../steps/so-very-meta.json'));
 // It can (and will) contain require() calls too.
 steps.push(require('../steps/zardoz'));
 
+// These are just normal commonjs modules.
+module.exports = steps;
 // <-- Rest of the file is concatenated on here -->
