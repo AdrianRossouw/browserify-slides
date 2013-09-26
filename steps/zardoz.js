@@ -4,7 +4,7 @@ module.exports = {
     "id": "zardos",
     "class": "step",
     "template": require('../templates/example.jade'),
-    "title": "Quick Peek Behind the Curtain",
+    "title": "Behind the Curtain",
     "example": {
         "description" : "This is called an 'entry point'",
         "filename"    : "./js/main.js",
@@ -12,9 +12,9 @@ module.exports = {
         "file"        : fs.readFileSync(__dirname + '/../js/main.js')
     },
     "data": {
-        "x": 6000,
-        "y": 0,
+        "x": 2000,
+        "y": 2000,
         "scale": 1,
-        "rotate": 90
+        "rotate": 180
     }
 };

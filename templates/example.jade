@@ -3,4 +3,5 @@ extends slide
 block content
   h3= example.filename
   block code
-    pre.lang-js!= example.file
+    pre
+      code.language-js!= example.file

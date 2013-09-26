@@ -7,7 +7,7 @@ module.exports =
     src: "/discs/step2.html"
     command: "discify js/main.js -o dist/js/main.js -O"
   data:
-    x: 4500
-    y: 1500
+    x: 3000
+    y: 3000
     scale: 1
     rotate: 90

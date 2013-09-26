@@ -12,40 +12,8 @@ module.exports = function (grunt) {
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
     grunt.initConfig({
-        browserify: {
-            vendor: {
-                files: {
-                    'dist/js/vendor.js': ['highlight.js', 'impress', 'underscore']
-                },
-                options: {
-                    shim: {
-                        'impress': { path: 'bower_components/impress.js/js/impress.js', exports: 'impress'}
-                    },
-                    alias: ['underscore:'],
-                    transform: ['debowerify']
-                }
-            },
-            templates: {
-                files: {
-                    'dist/js/templates.js': ['templates/*.jade']
-                },
-                options: {
-                    transform: ['jadeify2'],
-                    aliasMappings: {
-                        src: ['templates/*.jade']
-                    }
-                }
-            },
-            dist: {
-                files: {
-                    'dist/js/main.js': ['js/main.js', 'js/init.js']
-                },
-                options: {
-                    external: ['impress', 'highlight.js', 'underscore', 'templates/*.jade'],
-                    transform: ['coffeeify', 'jadeify2', 'brfs']
-                }
-            }
-        },
+        //broken out to work better as an example
+        browserify: require('./grunt.browserify'),
         watch: {
             options: {
                 livereload: LIVERELOAD_PORT

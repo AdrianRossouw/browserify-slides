@@ -6,18 +6,20 @@ steps.push({
     "id": "title",
     "class": "step title",
     "title": "<h1>Browserify</h1>",
-    "content": "<span class='subtitle'>client-side require('module')</span>",
-    "data": { "x": 0, "y": 0, "scale": 4 }
+    "content": "<q>client-side require('module')</q>",
+    "data": { "x": 0, "y": 0, "scale": 4, "rotate": 0 }
 });
 
 // Importing pure JSON.
-steps.push(require('../steps/step1.json'));
+steps.push(require('../steps/so-very-meta.json'));
 
 // <-- snip -->
 
 // This is javascript again.
 // It can (and will) contain require() calls too.
-steps.push(require('../steps/step2'));
+steps.push(require('../steps/zardoz'));
 
 // Supports coffee script via coffeeify.
-steps.push(require('../steps/step3.coffee'));
+steps.push(require('../steps/disco.coffee'));
+steps.push(require('../steps/grunt.coffee'));
+steps.push(require('../steps/about-amd.coffee'));
