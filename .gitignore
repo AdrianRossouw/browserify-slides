@@ -1,5 +1,2 @@
 node_modules
-bower_components
 *.log
-dist
-js/steps.js
