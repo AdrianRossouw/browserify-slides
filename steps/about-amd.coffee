@@ -1,10 +1,10 @@
 module.exports =
   id: "not-amd"
   class: "step"
-  template: require('../templates/step5.jade')
+  template: require('../templates/about-amd.jade')
   title: "Why not AMD?"
   data:
-    x: 5000
-    y: 5000
+    x: 15000
+    y: 0
     scale: 1
-    rotate: 90
+    rotate: 0

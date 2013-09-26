@@ -1,0 +1,14 @@
+extends slide
+
+block prose
+  :markdown
+    * builds an 'abstract syntax tree' of your code.
+    * does so recursively.
+    * knows the relative location of the file.
+    * understands how node_modules can be found.
+    * can tell when code is reachable.
+    * can __not__ tell when you are using dynamic require.
+  pre
+    code.language-js
+      | var name = 'mytemplate';
+      | require(__dirname + '/' + name); // do not do this

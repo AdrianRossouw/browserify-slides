@@ -1,12 +1,12 @@
 {
-    "id": "built-with-browserify",
-    "class": "step",
-    "title": "<h2>Built With Browserify</h2>",
-    "content": "<p>Examples seen here are running 'live'</p>",
-    "data": {
-        "x": 1000,
-        "y": 1000,
-        "scale": 1,
-        "rotate": 90
+    "id"         : "built-with-browserify",
+    "class"      : "step",
+    "title"      : "<h2>Built With Browserify</h2>",
+    "content"    : "<p>Examples seen here are running 'live'</p>",
+    "data"       : {
+        "x"      : 3000,
+        "y"      : 0,
+        "scale"  : 1,
+        "rotate" : 90
     }
 }

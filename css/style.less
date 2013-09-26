@@ -1,0 +1,43 @@
+// Core variables and mixins
+@import "variables.less";
+@import "mixins.less";
+
+// Reset
+@import "normalize.less";
+@import "print.less";
+
+// utilities
+@import "type.less";
+//@import "code.less";
+@import "utilities.less";
+
+// highlight.js styles
+@import "/css/default.css";
+@import "/css/tomorrow-night-bright.css";
+
+// our main stylehseet
+
+
+.step h2 {
+    font-size: 78px;
+    font-weight: bold;
+}
+
+
+.step pre {
+  position: absolute;
+  bottom: 61px;
+  left: 61px;
+  width: 772px;
+}
+.step pre code {
+    font-family: 'PT Mono';
+  font-size: 22px;
+  line-height: 28px;
+  border-radius: 10px
+}
+
+.slide iframe {
+  border-radius: 10px;
+  overflow: hidden;
+}

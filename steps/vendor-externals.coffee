@@ -8,3 +8,4 @@ module.exports =
     y: 0
     scale: 4
     rotate: 0
+

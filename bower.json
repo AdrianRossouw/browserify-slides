@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "impress.js": "~0.5.3",
-    "jquery": "~1.10"
+    "jquery": "~1.10",
+    "bootstrap": "~3.0.0"
   }
 }

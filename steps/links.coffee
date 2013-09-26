@@ -1,8 +1,8 @@
 module.exports =
-  id: "grunt"
+  id: "links"
   class: "step"
-  template: require('../templates/grunt.jade')
-  title: "Using Grunt"
+  template: require('../templates/links.jade')
+  title: "More information"
   data:
     x: 18000
     y: 0

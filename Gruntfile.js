@@ -14,13 +14,27 @@ module.exports = function (grunt) {
     grunt.initConfig({
         //broken out to work better as an example
         browserify: require('./grunt.browserify'),
+        concat: {
+            steps: {
+                files: { 'js/steps.js': ['js/steps_pt1.js', 'js/steps_pt2.js'] }
+            }
+        },
+        less: {
+            dist: {
+                files: { 'dist/css/style.css' : 'css/style.less' },
+                options: {
+                    'paths': ['bower_components/bootstrap/less']
+                }
+            }
+
+        },
         watch: {
             options: {
                 livereload: LIVERELOAD_PORT
             },
             livereload: {
                 tasks: ['default'],
-                files: ['index.html', 'js/*','steps/*', 'examples/*', 'css/*.css','templates/*.jade' ]
+                files: ['index.html', 'js/*','steps/*', 'examples/*', 'css/*.css', 'css/*.less','templates/*.jade' ]
             }
         },
         connect: {
@@ -49,6 +63,8 @@ module.exports = function (grunt) {
 
     // Default task(s).
     grunt.registerTask('default', [
+        'less',
+        'concat',
         'browserify'
     ]);
 
