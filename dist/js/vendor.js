@@ -3347,7 +3347,7 @@ hljs.LANGUAGES['parser3'] = require('./parser3.js')(hljs);
 hljs.LANGUAGES['clojure'] = require('./clojure.js')(hljs);
 hljs.LANGUAGES['go'] = require('./go.js')(hljs);
 module.exports = hljs;
-},{"./1c.js":2,"./actionscript.js":3,"./apache.js":4,"./applescript.js":5,"./avrasm.js":6,"./axapta.js":7,"./bash.js":8,"./brainfuck.js":9,"./clojure.js":10,"./cmake.js":11,"./coffeescript.js":12,"./cpp.js":13,"./cs.js":14,"./css.js":15,"./d.js":16,"./delphi.js":17,"./diff.js":18,"./django.js":19,"./dos.js":20,"./erlang-repl.js":21,"./erlang.js":22,"./glsl.js":23,"./go.js":24,"./haskell.js":25,"./http.js":27,"./ini.js":28,"./java.js":29,"./javascript.js":30,"./json.js":31,"./lisp.js":32,"./lua.js":33,"./markdown.js":34,"./matlab.js":35,"./mel.js":36,"./nginx.js":37,"./objectivec.js":38,"./parser3.js":39,"./perl.js":40,"./php.js":41,"./profile.js":42,"./python.js":43,"./r.js":44,"./rib.js":45,"./rsl.js":46,"./ruby.js":47,"./rust.js":48,"./scala.js":49,"./smalltalk.js":50,"./sql.js":54,"./tex.js":55,"./vala.js":56,"./vbscript.js":57,"./vhdl.js":58,"./xml.js":59}],27:[function(require,module,exports){
+},{"./1c.js":2,"./actionscript.js":3,"./apache.js":4,"./applescript.js":5,"./avrasm.js":6,"./axapta.js":7,"./bash.js":8,"./brainfuck.js":9,"./clojure.js":10,"./cmake.js":11,"./coffeescript.js":12,"./cpp.js":13,"./cs.js":14,"./css.js":15,"./d.js":16,"./delphi.js":17,"./diff.js":18,"./django.js":19,"./dos.js":20,"./erlang-repl.js":21,"./erlang.js":22,"./glsl.js":23,"./go.js":24,"./haskell.js":25,"./http.js":27,"./ini.js":28,"./java.js":29,"./javascript.js":30,"./json.js":31,"./lisp.js":32,"./lua.js":33,"./markdown.js":34,"./matlab.js":35,"./mel.js":36,"./nginx.js":37,"./objectivec.js":38,"./parser3.js":39,"./perl.js":40,"./php.js":41,"./profile.js":42,"./python.js":43,"./r.js":44,"./rib.js":45,"./rsl.js":46,"./ruby.js":47,"./rust.js":48,"./scala.js":49,"./smalltalk.js":50,"./sql.js":51,"./tex.js":52,"./vala.js":56,"./vbscript.js":57,"./vhdl.js":58,"./xml.js":59}],27:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     illegal: '\\S',
@@ -5185,13 +5185,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],"underscore":[function(require,module,exports){
-module.exports=require('G/4M9F');
-},{}],"impress":[function(require,module,exports){
-module.exports=require('UYLE3Z');
-},{}],"highlight.js":[function(require,module,exports){
-module.exports=require('mc8kka');
-},{}],54:[function(require,module,exports){
+},{}],51:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
@@ -5252,7 +5246,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],55:[function(require,module,exports){
+},{}],52:[function(require,module,exports){
 module.exports = function(hljs) {
   var COMMAND1 = {
     className: 'command',
@@ -5305,6 +5299,12 @@ module.exports = function(hljs) {
     ]
   };
 };
+},{}],"underscore":[function(require,module,exports){
+module.exports=require('G/4M9F');
+},{}],"impress":[function(require,module,exports){
+module.exports=require('UYLE3Z');
+},{}],"highlight.js":[function(require,module,exports){
+module.exports=require('mc8kka');
 },{}],56:[function(require,module,exports){
 module.exports = function(hljs) {
   return {

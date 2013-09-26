@@ -237,52 +237,54 @@ var jade = require('jade/lib/runtime.js');module.exports = function anonymous(lo
 var buf = [];
 var locals_ = (locals || {}),id = locals_.id,data = locals_.data,klass = locals_.klass,title = locals_.title;buf.push("<div" + (jade.attrs({ 'id':(id), 'data-x':(data.x), 'data-y':(data.y), 'data-scale':(data.scale), 'data-rotate':(data.rotate), 'data-rotate-x':(data.roll), 'data-rotate-y':(data.pitch), "class": [('container'),(klass)] }, {"class":true,"id":true,"data-x":true,"data-y":true,"data-scale":true,"data-rotate":true,"data-rotate-x":true,"data-rotate-y":true})) + "><h2>" + (jade.escape(null == (jade.interp = title) ? "" : jade.interp)) + "</h2></div>");;return buf.join("");
 }
-},{"jade/lib/runtime.js":2}],"MtZNB+":[function(require,module,exports){
-var jade = require('jade/lib/runtime.js');module.exports = function anonymous(locals) {
-var buf = [];
-var locals_ = (locals || {}),id = locals_.id,data = locals_.data,klass = locals_.klass,title = locals_.title;buf.push("<div" + (jade.attrs({ 'id':(id), 'data-x':(data.x), 'data-y':(data.y), 'data-scale':(data.scale), 'data-rotate':(data.rotate), 'data-rotate-x':(data.roll), 'data-rotate-y':(data.pitch), "class": [('container'),('slide'),(klass)] }, {"class":true,"id":true,"data-x":true,"data-y":true,"data-scale":true,"data-rotate":true,"data-rotate-x":true,"data-rotate-y":true})) + "><h2>" + (jade.escape(null == (jade.interp = title) ? "" : jade.interp)) + "</h2><div class=\"prose\"><ul>\n<li>Not everything is found in npm.</li>\n<li>More and more, things are found in bower too.</li>\n<li>Many modules have different module formats.</li>\n<li>Transforms and other tools.\n<ul><li>debowerify</li>\n<li>deamdify</li>\n<li>browserify-shim</li></ul></li>\n</ul></div></div>");;return buf.join("");
-}
-},{"jade/lib/runtime.js":2}],"templates/disc":[function(require,module,exports){
-module.exports=require('WeSXSM');
-},{}],"templates/slide":[function(require,module,exports){
-module.exports=require('TY8hD5');
-},{}],"templates/grunt":[function(require,module,exports){
-module.exports=require('/PwZzy');
-},{}],"TY8hD5":[function(require,module,exports){
-var jade = require('jade/lib/runtime.js');module.exports = function anonymous(locals) {
-var buf = [];
-var locals_ = (locals || {}),id = locals_.id,data = locals_.data,klass = locals_.klass,title = locals_.title,content = locals_.content;buf.push("<div" + (jade.attrs({ 'id':(id), 'data-x':(data.x), 'data-y':(data.y), 'data-scale':(data.scale), 'data-rotate':(data.rotate), 'data-rotate-x':(data.roll), 'data-rotate-y':(data.pitch), "class": [('container'),('slide'),(klass)] }, {"class":true,"id":true,"data-x":true,"data-y":true,"data-scale":true,"data-rotate":true,"data-rotate-x":true,"data-rotate-y":true})) + "><h2>" + (jade.escape(null == (jade.interp = title) ? "" : jade.interp)) + "</h2><div class=\"prose\"><p>" + (jade.escape(null == (jade.interp = content) ? "" : jade.interp)) + "</p></div></div>");;return buf.join("");
-}
-},{"jade/lib/runtime.js":2}],"templates/explain-ast":[function(require,module,exports){
-module.exports=require('LJrZRo');
-},{}],"templates/step":[function(require,module,exports){
-module.exports=require('Kf9I9N');
-},{}],"7ptio5":[function(require,module,exports){
+},{"jade/lib/runtime.js":2}],"7ptio5":[function(require,module,exports){
 var jade = require('jade/lib/runtime.js');module.exports = function anonymous(locals) {
 var buf = [];
 var locals_ = (locals || {}),id = locals_.id,data = locals_.data,klass = locals_.klass,title = locals_.title;buf.push("<div" + (jade.attrs({ 'id':(id), 'data-x':(data.x), 'data-y':(data.y), 'data-scale':(data.scale), 'data-rotate':(data.rotate), 'data-rotate-x':(data.roll), 'data-rotate-y':(data.pitch), "class": [('container'),('slide'),(klass)] }, {"class":true,"id":true,"data-x":true,"data-y":true,"data-scale":true,"data-rotate":true,"data-rotate-x":true,"data-rotate-y":true})) + "><h2>" + (jade.escape(null == (jade.interp = title) ? "" : jade.interp)) + "</h2><div class=\"prose\"><ul>\n<li>Also supports many of the builtin node modules.\n<ul><li>path</li>\n<li>url</li>\n<li>events</li>\n<li>stream</li>\n<li>buffer</li>\n<li>crypto</li></ul></li>\n</ul></div></div>");;return buf.join("");
 }
-},{"jade/lib/runtime.js":2}],"Kf9I9N":[function(require,module,exports){
+},{"jade/lib/runtime.js":2}],"templates/shimmy":[function(require,module,exports){
+module.exports=require('MtZNB+');
+},{}],"templates/about-amd":[function(require,module,exports){
+module.exports=require('RqW+6O');
+},{}],"MtZNB+":[function(require,module,exports){
+var jade = require('jade/lib/runtime.js');module.exports = function anonymous(locals) {
+var buf = [];
+var locals_ = (locals || {}),id = locals_.id,data = locals_.data,klass = locals_.klass,title = locals_.title;buf.push("<div" + (jade.attrs({ 'id':(id), 'data-x':(data.x), 'data-y':(data.y), 'data-scale':(data.scale), 'data-rotate':(data.rotate), 'data-rotate-x':(data.roll), 'data-rotate-y':(data.pitch), "class": [('container'),('slide'),(klass)] }, {"class":true,"id":true,"data-x":true,"data-y":true,"data-scale":true,"data-rotate":true,"data-rotate-x":true,"data-rotate-y":true})) + "><h2>" + (jade.escape(null == (jade.interp = title) ? "" : jade.interp)) + "</h2><div class=\"prose\"><ul>\n<li>Not everything is found in npm.</li>\n<li>More and more, things are found in bower too.</li>\n<li>Many modules have different module formats.</li>\n<li>Transforms and other tools.\n<ul><li>debowerify</li>\n<li>deamdify</li>\n<li>browserify-shim</li></ul></li>\n</ul></div></div>");;return buf.join("");
+}
+},{"jade/lib/runtime.js":2}],"templates/grunt":[function(require,module,exports){
+module.exports=require('/PwZzy');
+},{}],"templates/step":[function(require,module,exports){
+module.exports=require('Kf9I9N');
+},{}],"templates/links":[function(require,module,exports){
+module.exports=require('QN5Uy8');
+},{}],"Kf9I9N":[function(require,module,exports){
 var jade = require('jade/lib/runtime.js');module.exports = function anonymous(locals) {
 var buf = [];
 var locals_ = (locals || {}),id = locals_.id,data = locals_.data,klass = locals_.klass,title = locals_.title;buf.push("<div" + (jade.attrs({ 'id':(id), 'data-x':(data.x), 'data-y':(data.y), 'data-scale':(data.scale), 'data-rotate':(data.rotate), 'data-rotate-x':(data.roll), 'data-rotate-y':(data.pitch), "class": [('container'),(klass)] }, {"class":true,"id":true,"data-x":true,"data-y":true,"data-scale":true,"data-rotate":true,"data-rotate-x":true,"data-rotate-y":true})) + "><h2>" + (jade.escape(null == (jade.interp = title) ? "" : jade.interp)) + "</h2></div>");;return buf.join("");
 }
-},{"jade/lib/runtime.js":2}],"templates/command":[function(require,module,exports){
-module.exports=require('H8LTVw');
+},{"jade/lib/runtime.js":2}],"templates/node-builtins":[function(require,module,exports){
+module.exports=require('7ptio5');
 },{}],"templates/transforms":[function(require,module,exports){
 module.exports=require('g0Q0qS');
+},{}],"templates/node-globals":[function(require,module,exports){
+module.exports=require('i3DlFk');
+},{}],"templates/slide":[function(require,module,exports){
+module.exports=require('TY8hD5');
+},{}],"templates/command":[function(require,module,exports){
+module.exports=require('H8LTVw');
+},{}],"templates/vendor-externals":[function(require,module,exports){
+module.exports=require('pWv2TI');
 },{}],"i3DlFk":[function(require,module,exports){
 var jade = require('jade/lib/runtime.js');module.exports = function anonymous(locals) {
 var buf = [];
 var locals_ = (locals || {}),id = locals_.id,data = locals_.data,klass = locals_.klass,title = locals_.title;buf.push("<div" + (jade.attrs({ 'id':(id), 'data-x':(data.x), 'data-y':(data.y), 'data-scale':(data.scale), 'data-rotate':(data.rotate), 'data-rotate-x':(data.roll), 'data-rotate-y':(data.pitch), "class": [('container'),('slide'),(klass)] }, {"class":true,"id":true,"data-x":true,"data-y":true,"data-scale":true,"data-rotate":true,"data-rotate-x":true,"data-rotate-y":true})) + "><h2>" + (jade.escape(null == (jade.interp = title) ? "" : jade.interp)) + "</h2><div class=\"prose\"><ul>\n<li>automatically adds globals when used\n<ul><li>__filename</li>\n<li>__dirname</li>\n<li>Buffer</li>\n<li>process</li>\n<li>console</li>\n<li>http</li></ul></li>\n</ul></div></div>");;return buf.join("");
 }
-},{"jade/lib/runtime.js":2}],"templates/example":[function(require,module,exports){
-module.exports=require('O3iGpw');
-},{}],"templates/about-amd":[function(require,module,exports){
-module.exports=require('RqW+6O');
-},{}],"templates/vendor-externals":[function(require,module,exports){
-module.exports=require('pWv2TI');
-},{}],"g0Q0qS":[function(require,module,exports){
+},{"jade/lib/runtime.js":2}],"TY8hD5":[function(require,module,exports){
+var jade = require('jade/lib/runtime.js');module.exports = function anonymous(locals) {
+var buf = [];
+var locals_ = (locals || {}),id = locals_.id,data = locals_.data,klass = locals_.klass,title = locals_.title,content = locals_.content;buf.push("<div" + (jade.attrs({ 'id':(id), 'data-x':(data.x), 'data-y':(data.y), 'data-scale':(data.scale), 'data-rotate':(data.rotate), 'data-rotate-x':(data.roll), 'data-rotate-y':(data.pitch), "class": [('container'),('slide'),(klass)] }, {"class":true,"id":true,"data-x":true,"data-y":true,"data-scale":true,"data-rotate":true,"data-rotate-x":true,"data-rotate-y":true})) + "><h2>" + (jade.escape(null == (jade.interp = title) ? "" : jade.interp)) + "</h2><div class=\"prose\"><p>" + (jade.escape(null == (jade.interp = content) ? "" : jade.interp)) + "</p></div></div>");;return buf.join("");
+}
+},{"jade/lib/runtime.js":2}],"g0Q0qS":[function(require,module,exports){
 var jade = require('jade/lib/runtime.js');module.exports = function anonymous(locals) {
 var buf = [];
 var locals_ = (locals || {}),id = locals_.id,data = locals_.data,klass = locals_.klass,title = locals_.title;buf.push("<div" + (jade.attrs({ 'id':(id), 'data-x':(data.x), 'data-y':(data.y), 'data-scale':(data.scale), 'data-rotate':(data.rotate), 'data-rotate-x':(data.roll), 'data-rotate-y':(data.pitch), "class": [('container'),('slide'),(klass)] }, {"class":true,"id":true,"data-x":true,"data-y":true,"data-scale":true,"data-rotate":true,"data-rotate-x":true,"data-rotate-y":true})) + "><h2>" + (jade.escape(null == (jade.interp = title) ? "" : jade.interp)) + "</h2><div class=\"prose\"><ul>\n<li>Passes your code through a compilation/transform step.</li>\n<li>Can have more than one of them at a time.</li>\n<li>The order specified is important.</li>\n<li>Supports many different formats.\n<ul><li>Coffeescript.</li>\n<li>Most template languages.</li>\n<li>brfs - require file directly as text.</li></ul></li>\n</ul></div></div>");;return buf.join("");
@@ -292,13 +294,11 @@ var jade = require('jade/lib/runtime.js');module.exports = function anonymous(lo
 var buf = [];
 var locals_ = (locals || {}),id = locals_.id,data = locals_.data,klass = locals_.klass,title = locals_.title;buf.push("<div" + (jade.attrs({ 'id':(id), 'data-x':(data.x), 'data-y':(data.y), 'data-scale':(data.scale), 'data-rotate':(data.rotate), 'data-rotate-x':(data.roll), 'data-rotate-y':(data.pitch), "class": [('container'),('slide'),(klass)] }, {"class":true,"id":true,"data-x":true,"data-y":true,"data-scale":true,"data-rotate":true,"data-rotate-x":true,"data-rotate-y":true})) + "><h2>" + (jade.escape(null == (jade.interp = title) ? "" : jade.interp)) + "</h2><div class=\"prose\"><ul>\n<li>Don't put it all in one bundle.</li>\n<li>Considered good practice to have a vendor bundle.</li>\n<li>Bundles can 'expose' or 'alias' modules.</li>\n<li>Other bundles are told about 'externals', defined elsewhere.</li>\n<li>Can concatenate it later.</li>\n</ul></div></div>");;return buf.join("");
 }
-},{"jade/lib/runtime.js":2}],"templates/node-builtins":[function(require,module,exports){
-module.exports=require('7ptio5');
-},{}],"templates/shimmy":[function(require,module,exports){
-module.exports=require('MtZNB+');
-},{}],"templates/node-globals":[function(require,module,exports){
-module.exports=require('i3DlFk');
-},{}],"templates/links":[function(require,module,exports){
-module.exports=require('QN5Uy8');
+},{"jade/lib/runtime.js":2}],"templates/disc":[function(require,module,exports){
+module.exports=require('WeSXSM');
+},{}],"templates/explain-ast":[function(require,module,exports){
+module.exports=require('LJrZRo');
+},{}],"templates/example":[function(require,module,exports){
+module.exports=require('O3iGpw');
 },{}]},{},["RqW+6O","H8LTVw","WeSXSM","O3iGpw","LJrZRo","/PwZzy","QN5Uy8","7ptio5","i3DlFk","MtZNB+","TY8hD5","Kf9I9N","g0Q0qS","pWv2TI"])
 ;
